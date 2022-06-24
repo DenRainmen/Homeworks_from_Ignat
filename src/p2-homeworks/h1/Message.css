@@ -17,19 +17,32 @@
 .Message_block::after {
     content: '';
     position: absolute;
-    left: -3vw;
+    left: -4vw;
     bottom: 0;
     border: 5vw solid transparent;
-    /*border-right: 3vw solid transparent;*/
-    border-bottom: 2vw solid #003e00;
+    border-bottom: 3vw solid #003e00;
+    z-index: 0;
 }
 
+.Message_avatar {
+    border: 1.3vw solid greenyellow;
+    background-color: greenyellow;
+    /*padding-top: 50px;*/
+    /*margin-right: -1px;*/
+    border-radius: 0 0 2.5vw 0;
+    z-index: 1;
+    position: relative;
+    bottom: -0.2vw
+}
 
 .Message img {
-    width: 8vw;
-    height: 8vw;
-    border-radius: 80%;
-    padding-right: 1vw;
+    position: relative;
+    bottom: -1.5vw;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 100%;
+
+
 }
 
 .Message_name {
