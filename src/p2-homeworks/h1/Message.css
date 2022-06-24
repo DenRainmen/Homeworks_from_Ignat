@@ -1,0 +1,53 @@
+
+.Message {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.Message_block {
+    background: #003e00;
+    padding: 0.7vw 1.5vw;
+    border-radius: 1vw 1vw 1vw 0;
+    position: relative;
+    /*line-height: 1.6em;*/
+    width: 30vw;
+}
+
+.Message_block::after {
+    content: '';
+    position: absolute;
+    left: -3vw;
+    bottom: 0;
+    border: 5vw solid transparent;
+    /*border-right: 3vw solid transparent;*/
+    border-bottom: 2vw solid #003e00;
+}
+
+
+.Message img {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 80%;
+    padding-right: 1vw;
+}
+
+.Message_name {
+    color: #9492BE;
+    font-weight: 800;
+    font-size: 2vw;
+}
+
+.Message_text {
+    color: snow;
+    word-wrap: break-word;
+    font-size: 2vw;
+
+}
+
+.Message_time {
+    color: #02a67c;
+    text-align: right;
+    font-size: 2vw;
+}
+
